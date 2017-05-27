@@ -20,14 +20,10 @@ class UserForm extends React.Component {
     }
     handleChange(event){
         let value = event.target.value;
-        this.setState( () => {
-            return new UserConstructor(value);
-        }) 
+        this.setState( () => new UserConstructor(value)) 
     }
     handleReset(){
-        this.setState( () => {
-            return new UserConstructor();
-        })
+        this.setState( () => new UserConstructor())
     }
     render(){
         return (
