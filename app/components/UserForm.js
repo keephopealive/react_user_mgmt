@@ -35,7 +35,8 @@ class UserForm extends React.Component {
                 <h3>Create a new user</h3>
                 <form onSubmit={this.handleSubmit}>
                     <div className="mdl-textfield mdl-js-textfield">
-                        <input type="text" 
+                        <input 
+                            type="text" 
                             className="mdl-textfield__input"
                             name='first_name' 
                             id='first_name' 
@@ -45,8 +46,9 @@ class UserForm extends React.Component {
                         <label className="mdl-textfield__label" htmlFor="first_name">First Name</label>
                     </div>
                     
-                    <input type="submit" 
-                    className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                    <input 
+                        type="submit" 
+                        className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
                     />
                 </form>
             </div>
